@@ -6,7 +6,7 @@
 <style>
 
 h1 {
-    font-size: 20px;
+    font-size: 50px;
     padding-top: 250px;
     padding-bottom: 10px;
     line-height: 1px;
@@ -15,38 +15,44 @@ h1 {
 }
 
 h2 {
-    width: 12%; 
+    font-size: 100px;
     text-align: center; 
-    border-bottom: 1px solid #000; 
     line-height: 1px;
     margin-left: auto;
     margin-right: auto;
     
 }
 
-h2 span { 
-    background:#fff;
-    padding: 5px; 
-    text-align: center; 
 
-}
-
-p {
-    font-family:'Gill Sans';
+.container {
+    position: relative;
     text-align: center;
+    color: black;
 }
 
-
-#name{
-    font-family:'Gill Sans';
-    text-align: center;
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+img {
+    width:100%;
+}
+
 </style>
 </head>
 <body>
-    <h1>Hey, I'm </h1>
-    <h2><span>Nic Hirschfeld</span></h2>
-    
+
+    <div class="container">
+    <img src ="images/profil_pic.jpg" alt="profil_pic">
+    <div class="centered">
+        <h1>Hey, I'm </h1>
+        <h2>Nic Hirschfeld</h2></div>
+    </div>
+
+
 
 </body>
 </html>
